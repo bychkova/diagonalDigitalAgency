@@ -1,0 +1,180 @@
+.experience
+	display: flex
+	flex-direction: column-reverse
+	margin-top: 20px
+	margin-bottom: 50px
+	//position: relative
+	@media(min-width: 768px)
+		margin-top: 40px
+		margin-bottom: 70px
+	@media(min-width: 1200px)
+		margin-top: 70px
+		flex-direction: row
+
+.experience-video
+	height: 300px
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	background-image: url('../img/video-preview-959x465.jpg')
+	display: flex
+	justify-content: center
+	align-items: center
+	@media(min-width: 1200px)
+		width: 50%
+		height: 450px
+
+.experience-video-open
+	text-align: center
+	cursor: pointer
+	span
+		display: inline-block
+		border-radius: 50%
+		background-color: $grey
+		height: 56px
+		width: 56px
+		padding-top: 18px
+		padding-left: 15px
+		margin-bottom: 10px
+		&:before
+			display: inline-block
+			content: ''
+			border: 10px solid transparent
+			border-left: 15px solid #ffffff
+	h4
+		color: #ffffff
+		font-size: 20px
+		font-family: $base-font
+		font-weight: 700
+		letter-spacing: 1px
+
+.experience-video-vimeo
+	position: fixed
+	top: 0
+	left: 0
+	width: 100vw
+	height: 100vh
+	z-index: 5
+	display: flex
+	flex-direction: column
+	background-color: rgba(0,0,0,0.8)
+	padding: 10px
+
+.video-container
+	width: 100%
+	height: calc(100% - 58px)
+	display: flex
+	justify-content: center
+	align-items: center
+
+.experience-video-close
+	width: 48px
+	height: 48px
+	position: relative
+	cursor: pointer
+	span
+		width: 24px
+		height: 4px
+		background-color: #ffffff
+		position: absolute
+		left: 12px
+		top: 22px
+		&:first-child
+			transform: rotate(-45deg)
+		&:last-child
+			transform: rotate(45deg)
+	
+.experience-desc
+	display: flex
+	flex-direction: column
+	justify-content: center
+	background-color: #f8f8f8
+	padding-left: 10px
+	padding-right: 10px
+	height: 450px
+	@media(min-width: 500px)
+		padding-left: 15%
+		padding-right: 15%
+	@media(min-width: 1200px)
+		width: 50%
+		padding-left: 70px
+		padding-right: 70px
+	@media(min-width: 1600px)
+		padding-left: 8%
+		padding-right: 8%
+
+.title
+	color: $dark
+	font-size: 26px
+	font-family: serif
+	font-weight: 700
+	letter-spacing: 2px
+	line-height: 1.2
+	@media(min-width: 768px)
+		font-size: 38px
+	@media(min-width: 1200px)
+		font-size: 48px
+	@media(min-width: 1600px)
+		font-size: 52px
+
+.subtitle
+	color: $grey
+	font-size: 12px
+	font-family: $base-font
+	font-weight: 400
+	letter-spacing: 1px
+	line-height: 1.2
+	padding-left: 25px
+	@media(min-width: 768px)
+		font-size: 14px
+	@media(min-width: 1200px)
+		font-size: 18px
+	@media(min-width: 1600px)
+		font-size: 22px
+
+.text
+	color: #9b9b9b
+	font-size: 16px
+	font-family: $base-font
+	font-weight: 400
+	letter-spacing: 1px
+	line-height: 1.5
+	margin-top: 24px
+	@media(min-width: 768px)
+		margin-top: 34px
+	@media(min-width: 1600px)
+		font-size: 20px
+
+.links-box
+	display: flex
+	flex-wrap: wrap
+	margin-top: 30px
+	@media(min-width: 768px)
+		flex-wrap: no-wrap
+	.devider
+		height: 16px
+		width: 1px
+		background: $grey
+		margin-top: 13px
+		margin-right: 20px
+		margin-left: 20px
+
+.link-more
+	padding: 13px 43px
+	text-transform: uppercase
+	font-size: 16px
+	font-family: $base-font
+	font-weight: 700
+	letter-spacing: 1px
+	&__black
+		background: #000000
+		color: #ffffff
+	&__yellow
+		background: $yellow
+		color: $dark
+	&:last-child
+		@media(max-width: 446px)
+			margin-top: 20px
+
+.hide-video
+	display: none

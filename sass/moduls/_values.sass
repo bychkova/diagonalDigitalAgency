@@ -1,0 +1,57 @@
+.values
+	overflow: hidden
+	@media (min-width: 1199px)
+		flex-direction: column
+		width: 36%
+		transform: skew(10deg)
+		transform-origin: 100% 100%
+		margin-left: 35px 
+		flex-shrink: 0
+
+.values-list
+	width: 100%
+	display: flex
+	flex-direction: column
+	padding: 15px
+	@media (min-width: 767px)
+		flex-direction: row
+		justify-content: space-between
+	@media (min-width: 1199px)
+		flex-direction: column
+		padding: 0
+	
+.value-item
+	width: 100%
+	height: 150px
+	padding-top: 59px
+	margin-bottom: 15px
+	color: $dark
+	font-size: 24px
+	font-family: serif
+	font-weight: 700
+	letter-spacing: 2px
+	background-image: url('../img/home-1-538x200.jpg')
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+	text-align: center
+	&:nth-child(2)
+		background-image: url('../img/home-2-498x195.jpg')
+	&:last-child
+		background-image: url('../img/home-3-460x195.jpg')
+		margin-bottom: 0
+	@media (min-width: 767px)
+		height: 212px
+		text-align: left
+		padding: 90px
+		width: 32%
+	@media (min-width: 1199px)
+		transform: skew(-10deg)
+		transform-origin: 0 0
+		margin-bottom: 35px
+		width: auto
+	@media (min-width: 1800px)
+		height: 270px
+		padding: 124px
+		
+	

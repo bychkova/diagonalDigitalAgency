@@ -1,0 +1,204 @@
+header
+	position: relative
+	@media (min-width: 900px)
+		position: static
+
+.header-fixed
+	padding: 4px
+	height: 56px
+	position: relative
+	background-color: #ffffff
+	@media (min-width: 900px)
+		height: auto
+		padding: 30px 15px
+	@media (min-width: 1800px)
+		padding-left: 15%
+		padding-right: 15%
+		display: flex
+
+.logo-link
+	display: block
+	width: 110px
+	height: 38px
+	cursor: pointer
+	position: fixed
+	top: 10px
+	left: 57px
+	z-index: 10
+	@media (min-width: 900px)
+		position: static
+		width: 135px
+		height: 47px
+	@media (min-width: 1800px)
+		margin-right: 150px
+
+.header-fixed-bg
+	display: block
+	content: ''
+	width: 100vw
+	height: 56px
+	background-color: #ffffff
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 9
+	@media (min-width: 900px)
+		display: none
+
+.logo
+	width: 100%
+
+.navigation
+	display: flex
+	flex-direction: column
+	background: #ffffff
+	position: fixed
+	left: 0
+	top: 56px
+	z-index: 3
+	width: 280px
+	padding-top: 30px
+	min-height: 100vh
+	@media (min-width: 900px)
+		display: flex
+		flex-direction: row
+		position: sticky
+		top: 0
+		//position: static
+		min-height: auto
+		padding-left: 20px
+		margin-top: 20px
+		padding-top: 0
+		width: 100vw
+		background-color: #ffffff
+	@media (min-width: 1800px)
+		margin-left: 0
+		margin-top: 0
+
+.nav-link
+	padding: 9px 15px
+	color: $dark
+	font-size: 16px
+	font-family: $base-font
+	font-weight: 700
+	letter-spacing: 1px
+	border: 2px solid transparent
+	margin-right: 0
+	&:last-child
+		margin-right: 0
+	&:hover
+		border-color: $grey
+		border-right-color: transparent
+		border-left-color: transparent
+	&__active
+		border-color: $yellow
+		background-color: $yellow
+		&:hover
+			border-color: $yellow
+	@media (min-width: 900px)
+		margin-right: 5px
+		&:hover
+			border-right-color: $grey
+			border-left-color: $grey
+		&__active
+			&:hover
+				border-color: $yellow
+//mobile menu
+.mobile-nav
+	width: 48px
+	height: 48px
+	position: fixed
+	top: 4px
+	z-index: 10
+	@media (min-width: 900px)
+		display: none
+		
+
+.mobile-nav-continer
+	position: relative
+
+.mobile-nav__left
+	left: 4px
+	span
+		width: 24px
+		height: 4px
+		background-color: $dark
+		position: absolute
+		left: 12px
+		transition: transform 0.3s ease
+		transition: top 0.3s ease 0.1s
+		&:nth-child(1)
+			top: 14px
+		&:nth-child(2)
+			top: 22px
+		&:nth-child(3)
+			top: 30px
+
+.mobile-nav__right
+	right: 4px
+	span
+		width: 6px
+		height: 6px
+		border-radius: 50%
+		background-color: $dark
+		position: absolute
+		left: 21px
+		transition: 0.5s
+		&:nth-child(1)
+			top: 11px
+		&:nth-child(2)
+			top: 21px
+		&:nth-child(3)
+			top: 31px
+
+.mobile-nav__right.is-open
+	span
+		width: 4px
+		height: 4px
+		left: 22px
+		&:nth-child(1)
+			top: 27px
+		&:nth-child(3)
+			top: 15px
+
+//animation cross-navigation
+.is-open-cross
+	span
+		transition: top 0.3s ease
+		transition: transform 0.3s ease 0.1s
+		&:nth-child(1)
+			top: 22px
+			transform: rotate(-45deg)
+		&:nth-child(2)
+			opacity: 0
+		&:nth-child(3)
+			top: 22px
+			transform: rotate(45deg)
+
+.hide
+	display: none
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

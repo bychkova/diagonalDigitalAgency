@@ -1,0 +1,73 @@
+.header-top-wrapper
+	display: flex
+	flex-direction: column
+	background: #ffffff
+	position: fixed
+	right: 0
+	top: 56px
+	z-index: 3
+	padding: 25px 30px
+	@media (min-width: 900px)
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		padding: 16px 15px
+		background: $dark
+		position: static
+	@media (min-width: 1800px)
+		padding-left: 15%
+		padding-right: 15%
+
+.achievement-list
+	display: flex
+	justify-content: space-between
+	flex-direction: column
+	@media (min-width: 900px)
+		flex-direction: row
+
+.achievement-item
+	display: flex
+	//justify-content: space-between
+	margin-bottom: 15px
+	@media (min-width: 900px)
+		margin-bottom: 0
+		margin-right: 90px
+		&:last-child
+			margin-right: 0
+	svg
+		height: 19px
+		margin-right: 10px
+
+.achievement-text
+	font-family: $base-font
+	font-size: 12px
+	letter-spacing: 1px
+	line-height: 23px
+	color: $grey
+	@media (min-width: 900px)
+		font-size: 14px
+
+.phone
+	display: flex
+	@media (min-width: 900px)
+		justify-content: space-between
+
+.phone-text
+	color: $yellow
+	font-family: $base-font
+	font-size: 14px
+	letter-spacing: 1px
+	line-height: 23px
+	margin-right: 10px
+	@media (min-width: 900px)
+		font-size: 14px
+
+.phone-number
+	font-family: $base-font
+	font-size: 14px
+	letter-spacing: 1px
+	line-height: 23px
+	color: $grey
+	@media (min-width: 900px)
+		font-size: 14px
